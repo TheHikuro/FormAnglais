@@ -9,10 +9,12 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #5361FF;
+    --first-color: #092dbc;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
+    --red-color: #b6100d;
+    
 }
 
 /*===== Fuente y tipografia =====*/
@@ -23,6 +25,14 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
 }
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 6.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
 
 /*===== Margenes =====*/
 :root{
@@ -30,6 +40,10 @@
     --mb-2: 1rem;
     --mb-3: 1.5rem;
     --mb-4: 2rem;
+}
+
+:root{
+    --z-fixed: 100;
 }
 @media screen and (min-width: 768px){
     :root{
@@ -95,7 +109,7 @@ header{
 .back{
     position: relative;
     width: 100%;
-    background: url(../images/backV1.jpg) no-repeat top center;
+    background: url(../images/backV2.jpg) no-repeat top center;
     background-size: 100%;
     min-height: 100vh;
 }
@@ -104,7 +118,7 @@ header{
     .back{
         position: relative;
         width: 100%;
-        background: url(../images/backV1.jpg) no-repeat top center;
+        background: url(../images/backV2.jpg) no-repeat top center;
         background-size: 100%;
         height: 100%;
     }
@@ -113,7 +127,7 @@ header{
 @media screen and (max-width: 1080px){
     .back{
         position: relative;
-        background: url(../images/backV1.jpg) no-repeat top center;
+        background: url(../images/backV2.jpg) no-repeat top center;
         background-size: cover !important;
 	    -webkit-background-size: cover !important;
         height: 100%;
@@ -150,6 +164,10 @@ header{
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
+}
+
+#about-cont{
+    max-width: 1024px;
 }
 
 .nav{
@@ -200,14 +218,14 @@ nav ul li a.nav__link {
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--red-color);
     transition: all 0.5s ease-in-out;
     position: relative;
 }
   nav ul li a.nav__link::before {
     content: attr(data-item);
     transition: 0.5s;
-    color: #8254ff;
+    color: var(--first-color);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -259,6 +277,7 @@ nav ul li a.nav__link {
     .home__title{
         font-size: 70px;
         margin: 20%;
+        font-family: Papyrus, fantasy;
     }
 
     .t1{
@@ -305,7 +324,7 @@ nav ul li a.nav__link {
 }
 .about__social-icon{
     font-size: 1.4rem;
-    margin: 0 var(--mb-1);
+    margin: 0;
 }
 .about__social-icon:hover{
     color: var(--first-color);
