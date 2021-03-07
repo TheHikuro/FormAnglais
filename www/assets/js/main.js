@@ -58,17 +58,22 @@ sr.reveal('.home__img', {origin:'right', delay: 400})
 sr.reveal('.about__img', {delay: 400})
 sr.reveal('.about__subtitle', {delay: 300})
 sr.reveal('.about__profession', {delay: 400})
-sr.reveal('.about__text', {delay: 500})
-sr.reveal('.about__social-icon', {delay: 600, interval: 200})
+sr.reveal('.about__text', {delay: 500, interval: 200})
+sr.reveal('.about__social-icon', {delay: 600, interval: 300})
 sr.reveal('.CV', {delay: 700, interval: 200})
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-sr.reveal('.skills__img', {delay: 400})
+sr.reveal('.legend', {})
+sr.reveal('.about_m1', {})
+sr.reveal('.about_m2', {distance: '20px', delay: 50, interval: 100})
+sr.reveal('.about_m3', {delay: 400})
+sr.reveal('.phone_B', {delay: 400})
 
 /*SCROLL PORTFOLIO*/
-sr.reveal('.portfolio__img', {interval: 200})
+sr.reveal('.cours_ang_cont')
+sr.reveal('.info_anglais', {interval: 200})
+sr.reveal('.cours_fr_cont')
+sr.reveal('.info_francais', {interval: 200})
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle', {})

@@ -1,0 +1,150 @@
+@media screen and (min-width: 1080px){
+    .about_up{
+        display: flex;
+        justify-content: center;
+    }
+    .legend{
+        margin-left: 250px;
+    }
+
+    .conteneur_exp{
+        display: flex; 
+        justify-content: space-evenly;
+        margin: 30px;
+    }
+
+    .about__exp{
+        margin-left: 0px;
+    }
+
+    .about_exp-left{
+        margin-right: 0px
+    }
+
+    .about_exp-left .phone_B {
+        margin-right: 0px;
+    }
+    .about_exp-left .phone_B img{
+        height: 630px;
+        width: 350px
+    }
+
+    .phone_B{
+        margin-right: 0px;
+    }
+
+    .about_middle{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .about_middle{
+        display: none;
+    }
+    .about_middle img{
+        display: none;
+    }
+    .about_middle .photo#about_p1{
+        display: none;
+    }
+    .about_exp-left .phone_B img{
+        height: 560px;
+        width: 350px
+    }
+
+    .about_exp-left .phone_B {
+        margin-right: 0px;
+        margin-top: 90px;
+    }
+
+    .cour_ang_cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info_anglais{
+        left: 100px;
+        top: 50px;
+        width: calc(80% - 2rem);
+        height: calc(80% - 2rem);
+        margin-left: 0px;
+    }
+
+    .cour_fr_cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info_francais{
+        left: 100px;
+        top: 50px;
+        width: calc(80% - 2rem);
+        height: calc(80% - 2rem);
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .cours_ang_cont{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .cours_fr_cont{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .cours_ang_cont img#london__back{
+        display: none;
+    }
+    .cours_fr_cont img#france__back{
+        display: none;
+    }
+
+    .info_anglais{
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 2%;
+        background-color: purple;
+    }
+
+    .info_anglais p{
+        text-align: justify;
+        color: var(--white-color);
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 2%;
+        background-color: green;
+    }
+
+    .info_francais{
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 2%;
+        background-color: purple;
+    }
+
+    .info_francais p{
+        text-align: justify;
+        color: var(--white-color);
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 2%;
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+}
