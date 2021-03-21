@@ -3,14 +3,11 @@
         display: flex;
         justify-content: center;
     }
-    .legend{
-        margin-left: 250px;
-    }
 
     .conteneur_exp{
         display: flex; 
         justify-content: space-evenly;
-        margin: 30px;
+        margin: 50px;
     }
 
     .about__exp{
@@ -26,7 +23,7 @@
     }
     .about_exp-left .phone_B img{
         height: 630px;
-        width: 350px
+        width: 480px
     }
 
     .phone_B{
@@ -39,15 +36,6 @@
 }
 
 @media screen and (max-width: 1500px){
-    .about_middle{
-        display: none;
-    }
-    .about_middle img{
-        display: none;
-    }
-    .about_middle .photo#about_p1{
-        display: none;
-    }
     .about_exp-left .phone_B img{
         height: 560px;
         width: 350px

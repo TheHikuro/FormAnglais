@@ -89,8 +89,3 @@ sr.reveal('#card4', {delay: 500})
 sr.reveal('#card5', {delay: 600})
 
 /*SCROLL WORK */
-sr.reveal('#card_1', {})
-sr.reveal('#card_2', {interval: 600, delay: 200})
-sr.reveal('#card_3', {delay: 400})
-sr.reveal('#card_4', {delay: 500})
-sr.reveal('#card_5', {delay: 600})
