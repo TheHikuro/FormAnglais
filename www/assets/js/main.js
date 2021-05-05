@@ -56,6 +56,7 @@ sr.reveal('.home__img', {origin:'right', delay: 400})
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 400})
+sr.reveal('.about_photo_ban', {delay: 400})
 sr.reveal('.about__subtitle', {delay: 300})
 sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500, interval: 200})
