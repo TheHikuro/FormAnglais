@@ -516,7 +516,7 @@ nav ul li a.nav__link {
     flex-direction: row;
 }
 
-.photo_fauxAmis img{
+.photo_fauxAmis,.photo_fauxAmis img{
     width: 300px;
     height: 300px;
     margin: 20px;
@@ -552,11 +552,6 @@ nav ul li a.nav__link {
 .book_cover_cover{
     width: 400px;
     height: 300px;
-}
-
-.book_cover_cover:hover{
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-    transition: all ease-in-out 0.5s;
 }
 
 

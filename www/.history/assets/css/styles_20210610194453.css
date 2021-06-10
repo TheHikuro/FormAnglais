@@ -497,68 +497,137 @@ nav ul li a.nav__link {
 .conteneur_liste{
     margin-right: 50px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 1350px;
-    border-radius: 20px;
-    margin: 10px;
-    height: 120vh;
-    background-image: -webkit-gradient(linear, top, top, from(rgb(143, 124, 248)), to(rgb(17, 168, 255)));
-    background-image: linear-gradient(rgba(159, 71, 231, 0.548), rgba(38, 76, 241, 0.678));
-    color: #fff;
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-
-}
-
-.cont2{
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 1300px;
 }
 
 .photo_fauxAmis img{
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    margin-left: 15vh;
+    width: 350px;
+    height: 350px;
     box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-
 }
 
 .List_text{
+    max-width: 70%;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    width: 100vh;
+    flex-direction: column;
 }
+
+.List_text h2{
+    margin-bottom: 20px;
+}
+
+.List_text #btn_list{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.text_list{
+    text-align: justify;
+}
+
+.book_cover{
+    height: 400px;
+}
+
+.book_cover {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    perspective: 1000px;
+  }
+  .book_cover__cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+  }
+  .book_cover__cover::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+    transform: translateY(-20%);
+    will-change: transform;
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  }
+  .book_cover:hover .book_cover__cover {
+    transform: rotateX(7deg) translateY(-6px);
+  }
+  .book_cover:hover .book_cover__cover::after {
+    transform: translateY(0%);
+  }
+  .book_cover::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+    will-change: opacity;
+    transform-origin: top center;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .book_cover:hover::before {
+    opacity: 0.6;
+    transform: rotateX(7deg) translateY(-6px) scale(1.05);
+  }
 
 .fxA1{
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    width: 70vh;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+.fxA2 h2{
+    margin-bottom: 10px;
 }
 
-.fxA2, #fxA2{
+.fxA2{
+    margin-bottom: 20px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.book_cover_cover{
-    width: 400px;
-    height: 300px;
+.fxA3{
+    margin-bottom: 10px;
+    max-width: 45%;
 }
 
-.book_cover_cover:hover{
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-    transition: all ease-in-out 0.5s;
+.ex_fx{
+    text-align: justify;
 }
 
+.fxA3 h2{
+    margin-bottom: 10px;
+}
+
+.dwl_fa{
+    margin-left: 30px;
+}
 
 /* ===================== DEVIS / TARIF ===================== */
 

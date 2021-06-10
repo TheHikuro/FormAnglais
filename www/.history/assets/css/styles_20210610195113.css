@@ -497,38 +497,23 @@ nav ul li a.nav__link {
 .conteneur_liste{
     margin-right: 50px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 1350px;
-    border-radius: 20px;
-    margin: 10px;
-    height: 120vh;
-    background-image: -webkit-gradient(linear, top, top, from(rgb(143, 124, 248)), to(rgb(17, 168, 255)));
-    background-image: linear-gradient(rgba(159, 71, 231, 0.548), rgba(38, 76, 241, 0.678));
-    color: #fff;
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-
-}
-
-.cont2{
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 1300px;
+    border-radius: 20px;
+    background-color: rgb(88, 85, 85);
+    margin: 10px;
 }
 
 .photo_fauxAmis img{
     width: 300px;
     height: 300px;
     margin: 20px;
-    margin-left: 15vh;
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-
 }
 
 .List_text{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 100vh;
 }
 
@@ -537,26 +522,6 @@ nav ul li a.nav__link {
     justify-content: center;
     text-align: justify;
     width: 70vh;
-    margin-top: 20px;
-}
-
-.fxA2, #fxA2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.book_cover_cover{
-    width: 400px;
-    height: 300px;
-}
-
-.book_cover_cover:hover{
-    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
-    transition: all ease-in-out 0.5s;
 }
 
 
